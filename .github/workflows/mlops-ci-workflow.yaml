@@ -62,7 +62,7 @@ jobs:
       - name: Set up Docker Hub credentials
         uses: docker/login-action@v3
         with:
-          username: ${ vars.DOCKERHUB_USERNAME }}
+          username: ${{ vars.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       
       - name: Set up Docker Buildx
